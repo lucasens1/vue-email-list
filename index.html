@@ -9,11 +9,15 @@
 </head>
 <body>
     <div id="app">
-        <button @click="getRandomEmail">Genera lista email :</button>
-        <ul id="email-list">
+        <div>
+            <button @click="getRandomEmail">Genera lista email :</button>
+            
+            <ul id="email-list">
             <!-- Stampo dinamicamente 10x li -->
             <li v-for="curEmail in emailArray"> {{ curEmail }}</li>
-        </ul>
+            </ul>
+        </div>
+        
     </div>
     <!-- Axios -->
     <script
